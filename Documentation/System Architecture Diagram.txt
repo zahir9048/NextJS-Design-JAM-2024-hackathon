@@ -1,0 +1,42 @@
+                        +-----------------------+
+		        |    Frontend (Next.js) |
+		        |-----------------------|
+		        | - Home                |
+                        | - Menu                |
+                        | - Food Item Details   |
+               	        | - Cart                |
+ 		        | - Checkout            |
+                        | - Order Tracking      |
+                        | - User Login/Signup   |
+		     +--+------------^----------+----+
+                     |               |               |
+                     |               |               |
++---------v----------+     +---------v---------+     +--------------------+
+|    Clerk Auth      |     |     Sanity CMS    |     |   ShipEngine API   |
+|------------------- |     |------------------ |     |------------------- |
+| - User Auth        |---->| - Product Data    |<--->| - Shipment Tracking| 
+| - Social Logins    |     |   (Food Items,    |     | - Delivery Updates |
+| - Session Mgmt     |     |    Pricing)       |     | - ETA Calculations |
++---------+----------+     | - Order Data      |     +------------------- +
+                           |   (Order History, |
+                           |    Shipment Info, | 
+                           |    Payment Info)  |
+                           | - Customer Data   |
+                           |   (Name, Email,   |
+                           |    Address)       |
+                           +---------+---------+
+                                     |
+                                     |
+                           +---------v---------+
+                           |  Payment Gateway  |
+                           |-------------------|
+                           | - Secure Payments |
+                           | - Payment Status  |
+                           +-------------------+
+
+
+
+
+    
+
+
