@@ -1,0 +1,8 @@
+Test Case ID,Test Case Description,Test Steps,Expected Result,Actual Result,Status,Severity Level,Assigned To,Remarks
+TC001,Validate food items listing page,Open shop page > Verify all food items,Food items should be displayed correctly and instantly.,Food items displayed correctly and instantly.,Passed,Medium,-,No issues found
+TC002,API error handling,Disconnect API > Refresh page,Show fallback UI with error message,Error message is shown,Passed,Medium,-,Handled gracefully
+TC003,Check cart functionality,Add product to cart > Verify cart contents,Cart updates with added product,Cart updates as expected,Passed,High,-,Works as expected
+TC004,Ensure responsiveness on mobile,Resize browser window > Check layout,Layout adjusts properly to screen size,Responsive layout working as intended,Passed,Medium,-,Test successful
+TC005,Add items to cart by different users,Login from one user > add some items to cart > logout and login from other user > his items should be seperate from the old user.,Both users cart items are stored seperately in browser cookies.,Both users cart items are stored seperately in browser cookies.,Passed,-,-,Test successful
+TC006,Add to cart without authentication,Go to  food item detail page (withotut login) > add item to cart,User should be redirected to sign up page,User is redirected to sign in page on clicking add to cart if he is not signed in,Passed,High,-,Test successful
+TC007,Validate search bar,Go to shop page > click on search > type something which is not in sanity database,No Items found text should be shown,No items found is shown.,Passed,High,-,Handled gracefully
